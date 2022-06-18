@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root {
+    /* Primary */
+    --Pale-blue: hsl(225, 100%, 94%);
+    --Bright-blue: hsl(245, 75%, 52%);
+
+    /* Neutral */
+    --Very-pale-blue: hsl(225, 100%, 98%);
+    --Desaturated-blue: hsl(224, 23%, 55%);
+    --Dark-blue: hsl(223, 47%, 23%);
+}
+
+body {
+    font-family: 'Red Hat Display', sans-serif;
+    text-align: center;
+    background-color: var(--Pale-blue);
+    font-size: 16px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.card {
+    width:375px;
+    background-color: #fff;
+    border-radius: 20px;
+}
+
+.hero-img {
+    width: 100%;
+    border-radius: 20px 20px 0 0;
+}
+
+.card-content {
+    padding:30px;
+}
+
+.heading {
+    margin-bottom:20px;
+    font-size: 24px;
+}
+
+.description {
+    color: var(--Desaturated-blue);
+    margin-bottom:20px;
+    line-height:1.6;
+}
+
+.pricing-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:space-between;
+    padding:10px 10px;
+    background-color: var(--Pale-blue);
+    border-radius:10px;
+}
+.plan {
+    font-weight: 900;
+}
+
+.price {
+    color: var(--Desaturated-blue);
+}
+
+.change-plan {
+    text-decoration: underline;
+    color: var(--Bright-blue);
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.change-plan:hover {
+    opacity: 0.6;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.proceed-btn {
+    width: 100%;
+    margin: 20px 0;
+    padding: 16px;
+    color:#fff;
+    font-weight:700;
+    background-color: var(--Bright-blue);
+    border: none;
+    border-radius:10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.proceed-btn:hover {
+    opacity: 0.6
+}
+
+.cancel-btn {
+    width: 100%;
+    padding: 16px;
+    color:var(--Desaturated-blue);
+    font-weight:700;
+    background-color: #fff;
+    border: none;
+    border-radius:10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cancel-btn:hover {
+    color:#000;
+}
